@@ -1,7 +1,4 @@
-puts 1 + 2
+name = "alis"
+puts "hello,#{name}"
 
-a = "Hello, world"
-puts a
-
-b = "こんにちは"
-puts b
+puts "ruby" == "ruby"
