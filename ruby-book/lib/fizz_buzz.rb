@@ -19,3 +19,12 @@ puts fizz_buzz(4)
 puts fizz_buzz(5)
 puts fizz_buzz(6)
 puts fizz_buzz(15)
+
+puts 'Line1,
+Line2'
+
+a = <<-TEXT
+これはヒアドキュメントです。
+複数行に渡る長い文字列を作成するのに便利です。
+TEXT
+puts a
