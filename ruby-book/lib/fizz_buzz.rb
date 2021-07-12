@@ -20,5 +20,6 @@ puts fizz_buzz(5)
 puts fizz_buzz(6)
 puts fizz_buzz(15)
 
-puts 'Hi' * 5
-puts 2e-3 
+puts 'Hi' * 9
+puts 2e-0
+puts "赤とんぼ"
