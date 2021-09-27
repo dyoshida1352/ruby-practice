@@ -1,9 +1,16 @@
-# p 4.8.class
-# p 4.8.methods
+# if
+# > < >= <= == !=
+# &&(AND) ||(OR) !(NOT)
 
-p 10 + 4
-p 10 * 4
-p 10 / 4
-p 10 % 4
+puts "数値を入力してください"
+score = gets.to_i
 
-p 53.3.round
+# if score > 80
+#   puts "great!"
+# elsif score > 60
+#   puts "good!"
+# else
+#   puts "so so ..."
+# end
+
+puts "great!" if score > 80
