@@ -4,9 +4,9 @@ def sayHi(name = "tom") # 引数
   return "hi! #{name}"
 end
 
-# sayHi("taguchi")
-# sayHi "taguchi"
-# sayHi
+sayHi("taguchi")
+sayHi "taguchi"
+sayHi
 
 # p sayHi
 p score
