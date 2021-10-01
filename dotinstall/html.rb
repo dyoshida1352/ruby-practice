@@ -1,26 +1,20 @@
-def movie_encode
-end
+ ##ミックスイン
 
-def movie_export
-end
+module Debug
 
-
-#上記について、他者が作成したメソッド名などとの衝突を考慮し、モジュールを使って自分だけの名前空間を作っていく
-
-module Movie #モジュールの一文字目は必ず大文字
-
-  VERSION = 1.1
-
-  def self.encode
-    puts "encoding..."
-  end
-
-  def self.export
-    puts "exporting..."
+  def info
+    puts "#{self.class} debug info ..."
   end
 
 end
 
-Movie.encode #encoding...
-Movie.export #exporting...
-p Movie::VERSION #1.1
+class Player
+  include Debug #classにミックスインするにはincludeを使用する
+end
+
+class Monster
+  include Debug
+end
+
+Player.new.info #Player debug info ...
+Monster.new.info #Monster debug info ...
